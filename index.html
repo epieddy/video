@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="video">
   <head>
     <meta charset="utf-8">
 
@@ -19,6 +19,13 @@
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+
+    <!-- AngularJS -->
+    <script type="text/javascript" src="lib/angularjs/angular.js"></script>
+
+    <!-- Internals -->
+    <script type="text/javascript" src="js/video.app.js"></script>
+    <script type="text/javascript" src="js/fileList.controller.js"></script>
   </head>
 
   <body>
@@ -37,8 +44,8 @@
           </ul>
 
           <div class="tab-content">
-            <div id="file" class="tab-pane active">
-              file
+            <div id="file" class="tab-pane active" ng-controller="fileList">
+
             </div>
             <div id="test1" class="tab-pane">
 test1
